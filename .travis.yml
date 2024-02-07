@@ -1,0 +1,13 @@
+os: linux
+dist: focal
+language: shell
+vault:
+  token:
+    secure: "ZORA1HMEgXZHhrcUq9Rnvuv05Pet9HA9wwTUKlA6Z7GfKcHIu665yArYaKqgfizZS8vgzbCeLvNec5PkXdWQVyGw3qycFXXUrgpIufkCkeEbhQajoD4Wv99Pvx2xsLEeODIPnlcQPkk/YH/Eqm5oi38Nv++mgiZlYAAbr7lZxL03MzxdCSGh9dd7qHZEOFQKiv3Gdacqwb5VTQltH1bRe+tZJ1a/rfpqmNN0fRoGFwmc43DMKRKW3Q5K7KT6ij61ABcxe+Y/J4A32g4q81r5jJJV4w1Lu51HFbkjtg8+jt6bHobUOIwirD14Fm6tIaa8BcSFbbQ0WR1rbO4vu0Jn+abLNLUicf6y5yOKGccq1oMYhVMnHhQWlz5XLyyaEjN8ApIEh/6KwOBG6WB+IygYoTMUnnDhlRR4oVXEc0gFv3Od4DPtts5q8Tsxox3t6HYL/Zzz/IGP4dHp30MzbnFiakF8JkcocXULV03jzzYjg2I1HutQclyV2GNtvqaxzOi0u8QUBuhp0cDRqr7d0LswSQAyH/U0+NB+JK7mraB+hUYmiv5JaIukUB9JvYvk694myo0wN/sL3IfmLc6sKqSxyNDADF9VDt1YrASUmyA/zZnx0/2xpOij8YLpJr0Uvkuf/MjqXpFalEvzO/0pDrF88sXWg1FhhrunzuHpvwG3ke4="
+  api_url: https://vault-dwztla.travis-ci.com
+  secrets:
+    - secret/foribm
+
+script:
+  - echo $foribm_foo
+#this adds comment
